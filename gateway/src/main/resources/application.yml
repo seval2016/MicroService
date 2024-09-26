@@ -7,4 +7,4 @@ spring:
 
   config:
     import: optional:configserver:http://localhost:8090
-    #config server a baglanip kendi konsigurasyonunu buradan almasini sagliyorum
+    #eğer config server a ihtiyacı olursa bu adresten bağlanıp baglanip kendi konsigurasyonunu buradan almasini sagliyorum

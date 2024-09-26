@@ -9,5 +9,5 @@ eureka:
     registerWithEureka: false  # kendisi eureka oldugu icin bir yere kaydolmayacak o yuzden 2 yere false yazildi
     fetchRegistry: false #  Eureka sunucusunda kay?tl? olan di?er servisleri bilgilerini yerel olarak saklayacak ve bunlar? kullanarak servisleri dinamik olarak bulabilecektir.
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #http://localhost:8097/eureka
 
