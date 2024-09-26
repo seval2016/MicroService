@@ -4,7 +4,7 @@ import com.tpe.dto.CarDTO;
 import com.tpe.dto.CarRequest;
 import com.tpe.service.CarService;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -29,7 +29,7 @@ public class CarController {
 
     @GetMapping
     public ResponseEntity<List<CarDTO>> getAllCars(){
-         List<CarDTO> allCars =  carService.getAllCars();
-         return ResponseEntity.ok(allCars);
+        List<CarDTO> allCars =  carService.getAllCars();
+        return ResponseEntity.ok(allCars);
     }
 }

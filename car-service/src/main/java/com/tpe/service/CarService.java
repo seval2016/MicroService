@@ -31,17 +31,17 @@ public class CarService {
 
     public void save(CarRequest carRequest) {
 
-        Car car =  modelMapper.map(carRequest, Car.class);
+        Car car =  modelMapper.map(carRequest, Car.class);//2.parametreyi 1.prametreye ceviriyor
         carRepository.save(car);
 
         InstanceInfo instanceInfo =  eurekaClient
-                .getApplication("log-service")
-                .getInstances().get(0); // birden fazla ikiz service olabilir, ilk index de olani getir.
+                .getApplication("log-service")//eurokaClient sınıfından log-service bilgilerini istiyoruz
+                .getInstances().get(0); // log-service bölümlendirmiş ve birden fazla ikiz service olabilir, ilk index de olani getir.
 
-        String baseUrl =  instanceInfo.getHomePageUrl(); // http://localhost:8083
+        String baseUrl =  instanceInfo.getHomePageUrl(); // http://localhost:8083 yani endpoint'in base url'i oluşturmak için yazılır
         String path = "/log";
 
-        String servicePath = baseUrl + path ; // http://localhost:8083/log
+        String servicePath = baseUrl + path ; // String Concatination yaptık -> http://localhost:8083/log
 
         // Log-Service icin gerekli olan DTO sinifi olusturuluyor
         AppLogDTO appLogDTO = new AppLogDTO();
@@ -52,6 +52,7 @@ public class CarService {
         // POST MApping
         ResponseEntity<String> logResponse =
                 restTemplate.postForEntity(servicePath, appLogDTO, String.class); // !!! PostMapping yapilacagini belirtiyorum
+        //Http methodum post mappin olacak( endpoint'im, json, Bu endpoint'e bu json ile post ile bir istek de bulunduğumda String türünde bir değer dönecek)
         //!!! response da olusturulan HttpStatus codu CREATED degilse exception firlat
 
         if(!(logResponse.getStatusCode() == HttpStatus.CREATED)){

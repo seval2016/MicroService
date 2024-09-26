@@ -8,10 +8,10 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class LogService {
+
     private final LogRepository logRepository;
 
     public void saveLog(AppLog appLog) {
-
         logRepository.save(appLog);
     }
 }

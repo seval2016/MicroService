@@ -1,5 +1,6 @@
 package com.tpe.dto;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,7 +10,8 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class CarRequest {
+public class CarDTO {
+    private Long id;
 
     private String brand;
 
@@ -20,4 +22,5 @@ public class CarRequest {
     private Double pricePerHour;
 
     private Integer age;
+
 }

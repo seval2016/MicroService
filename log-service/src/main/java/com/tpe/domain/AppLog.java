@@ -1,5 +1,6 @@
 package com.tpe.domain;
 
+
 import com.tpe.enums.AppLogLevel;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,11 +16,11 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 
-@Document
+@Document //NoSQL bir bir mongoDB kullanıyoruz bu yüzden tablo yok dokumanlar var. Entity değil document kullanacağız
 public class AppLog {
 
     @Id
-    private  String id;
+    private String id;
 
     private AppLogLevel level;
 

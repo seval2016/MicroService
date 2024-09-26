@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e80723eb-718e-44cd-a116-7abd5745fd5b" name="Changes" comment="" />
+    <list default="true" id="7da8df90-b37e-41c2-b4fb-1f162608b273" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="2mCe5h5YphtqaVt2fJ7hgmI6YCp" />
+  <component name="ProjectId" id="2dgvT7j81WbkGj2g6FKAn5Nanl6" />
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
@@ -19,17 +19,21 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/seval/IdeaProjects/MicroService",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e80723eb-718e-44cd-a116-7abd5745fd5b" name="Changes" comment="" />
-      <created>1726584804191</created>
+      <changelist id="7da8df90-b37e-41c2-b4fb-1f162608b273" name="Changes" comment="" />
+      <created>1710442541612</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1726584804191</updated>
+      <updated>1710442541612</updated>
     </task>
     <servers />
   </component>
